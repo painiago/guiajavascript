@@ -52,7 +52,7 @@ interface PostsProps{
                  <FontAwesomeIcon icon={faHand} className={styles.icon}/>
                 </span>  
               </div>
-                <SubscribeButton priceId={'string'} />
+                <SubscribeButton />
            </div>
         </div>
       </main>

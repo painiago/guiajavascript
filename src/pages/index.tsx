@@ -38,9 +38,9 @@ export default function Home({product}: HomeProps) {
             <h1>Guia <span>JavaScript</span> para iniciantes</h1>
             <p>
               Tenha acesso a toda publicação <br />
-              <span>por {product.amount}</span>
+              <span>por R$14,90</span>
             </p>
-            <SubscribeButton priceId={product.priceId} />
+            <SubscribeButton />
           </section>
           <div className={styles.hero2}> 
             <img src="/imagens/capa1.png" alt="avatar" className={styles.imgfluid}/>
@@ -86,7 +86,7 @@ export default function Home({product}: HomeProps) {
           <div className={styles.BoxPay}>
             <p>Adiquira o ebook agora e comece sua jornada na programação web!</p>
             <div className={styles.BoxPay2}>
-              <SubscribeButton priceId={product.priceId} />
+              <SubscribeButton/>
             </div>
           </div>
           <div className={styles.BoxTrabalho}>

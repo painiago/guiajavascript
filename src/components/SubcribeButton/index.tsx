@@ -8,31 +8,31 @@ interface SubcribeButtonProps{
   priceId: string;
 }
 
-export function SubscribeButton({priceId}: SubcribeButtonProps) {
+export function SubscribeButton() {
 
-  const {data: session} = useSession();
-  const router = useRouter();
+//   const {data: session} = useSession();
+//   const router = useRouter();
     
-  async function handleSubscribe() {
-    if(!session){
-      signIn('provider')
-      return;
+//   async function handleSubscribe() {
+//     if(!session){
+//       signIn('provider')
+//       return;
 
-    }
+//     }
  
       
-    try {
-      const response = await api.post('/subscribe'); 
-      const {sessionId} = response.data;
+//     try {
+//       const response = await api.post('/subscribe'); 
+//       const {sessionId} = response.data;
 
-      const stripe = await getStripeJs();
+//       const stripe = await getStripeJs();
 
-      await stripe?.redirectToCheckout({sessionId})
-    }catch(error) {
-       console.log('Deu bom não',error);
+//       await stripe?.redirectToCheckout({sessionId})
+//     }catch(error) {
+//        console.log('Deu bom não',error);
       
-  }
-}
+//   }
+// }
 
   
 //  Sessão de checkout 
