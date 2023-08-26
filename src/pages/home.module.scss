@@ -1,0 +1,481 @@
+.contentContainer {
+  max-width: 1120px;
+  margin: 0 auto;
+  margin-top: 3rem;
+  padding: 0 2rem;
+  display: grid; /* Usar o sistema de grid */
+  grid-template-columns: 1fr; /* Uma coluna por padrão */
+
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr 1fr; /* Duas colunas em telas maiores */
+    gap: 2rem; /* Espaçamento entre as colunas */
+    padding: 0 4rem;
+    margin-bottom: 20px;
+  }
+}
+.imgfluid {
+  max-width: 100%; /* Largura máxima da imagem */
+  height: auto; /* Manter a proporção da imagem */
+  display: block; /* Corrigir possíveis problemas de alinhamento */
+  margin: 0 auto; /* Centralizar a imagem horizontalmente */
+  align-self: flex-start; /* Alinhar a imagem ao topo da seção */
+
+  @media (max-width: 768px){
+    max-width: 100%;
+  }
+}
+
+.hero{
+  max-width: 100% !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centralizar verticalmente o conteúdo */
+  
+
+ 
+  > span{
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  h1{
+    font-size: 4.5rem;
+    line-height: 4.5rem;
+    font-weight: 900;
+    margin-top: 2.5rem;
+    @media (max-width: 768px) {
+      font-size: 3.5rem;
+    }
+
+    span{
+      color: var(--cyan-500); 
+    }
+  }
+
+  p{
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    margin-top: 1.5rem;
+    
+    span{
+      color: var(--cyan-500);
+      font-weight: bold;
+    }
+  }
+  button{
+    margin-top: 2.5rem;
+  }
+   
+  @media (min-width: 768px) {
+    font-size: 1.5rem; /* Restaurar o tamanho da fonte para telas maiores */
+  }
+}
+.hero2{
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Centralizar verticalmente o conteúdo */
+
+}
+
+// SECTION SOBRE EBOOK
+.ContentSobre {
+  max-width: 100%;
+  background-color: #19041D;
+  background: url('/imagens/not5.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 2rem 0; /* Adicionar espaço interno para a seção */
+}
+
+.BoxSobre {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem; /* Adicionar espaçamento interno */
+
+
+  p:nth-of-type(1) {
+    font-size: 2rem; /* Aumentar o tamanho do título */
+    font-weight: bold;
+    margin-bottom: 1rem; /* Adicionar espaço abaixo do título */
+  }
+  
+  p:nth-of-type(2) {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    margin-top: 1rem; /* Adicionar espaço acima do subtítulo */
+    span{
+      color: #16B9D4;
+    }
+  }
+  p:nth-of-type(3) {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    margin-top: 1rem; /* Adicionar espaço acima do subtítulo */
+  }
+}
+.BoxSobre2 {
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 2rem;
+
+  p:nth-of-type(1) {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+  }
+  p:nth-of-type(2) {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    span{
+      color: #FFB300;
+    }
+  }
+}
+
+.BoxPay{
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  
+  p{
+    text-align: center;
+    font-size: 1.5rem;
+  }
+}
+.BoxPay2{
+  display: flex;
+  margin-top: 20px !important;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+
+}
+// Estilização book
+
+.ContainerBook{
+  max-width: 1120px;
+  margin: 0 auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  padding: 0 2rem;
+  display: grid; /* Usar o sistema de grid */
+  grid-template-columns: 1fr 1fr;
+
+@media (min-width:768px) {
+  grid-template-columns: 1fr 1fr;
+}
+@media (max-width:768px) { 
+  grid-template-columns: 1fr;
+}
+}
+.boxBook{
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  
+  img{
+    max-width: 100%; /* Largura máxima da imagem */
+    height: auto; /* Manter a proporção da imagem */
+    margin: 0 auto; /* Centralizar a imagem horizontalmente */
+
+  }
+
+  ul{
+    display: flex;
+    flex-direction: column;
+    
+    @media (max-width:768px) {
+      margin-top: 20px;
+    }
+    p{
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+      @media (max-width:768px) {
+        font-size: 1.2rem;
+      }
+    }
+
+    li{
+      list-style: none;
+      margin: 1px 0 0 0;
+      font-size: 1.2rem;
+      display: flex;
+      
+      
+      p{
+        font-size: 1rem;
+        margin-left: 5px;
+      }
+      @media (max-width:768px) {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+
+// Mercado de trabalho
+.ContentTrabalho {
+  max-width: 100%;
+  background-color: #19041D;
+  padding: 2rem 0; /* Adicionar espaço interno para a seção */
+}
+
+.BoxTrabalho {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem; /* Adicionar espaçamento interno */
+  span:nth-of-type(1){
+    color: #16B9D4;
+  }
+  span:nth-of-type(2){
+    color: #16B9D4;
+  }
+  p:nth-of-type(1) {
+    font-size: 2rem; /* Aumentar o tamanho do título */
+    font-weight: bold;
+    margin-bottom: 1rem; /* Adicionar espaço abaixo do título */
+  }
+  
+  p:nth-of-type(2) {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+   
+    margin-top: 1rem; /* Adicionar espaço acima do subtítulo */
+  }
+  p:nth-of-type(3) {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    margin-top: 1rem; /* Adicionar espaço acima do subtítulo */
+  }
+}
+.BoxNoticia {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem; /* Adicionar espaçamento interno */
+  display: flex;
+  margin-bottom: 30px;
+  @media (max-width:768px) {
+    flex-direction: column;
+    
+  }
+}
+.BoxCont{
+  max-width: 600px;
+  padding: 10px;
+
+  img{
+    max-width: 100%;
+  }
+}
+
+// DOAÇÃO
+
+.ContainerDoacao{
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #180120;
+}
+
+.BoxDoacao{
+  background-color: #59006E;
+}
+.BoxDoacao1{
+  background-color: #30053A;
+}
+.Boxtxt{
+  text-align: center;
+
+  height: 100%;
+  padding: 30px;
+ span:nth-of-type(1){
+  font-size: 4.5rem;
+  font-weight: bold;
+ }
+ p:nth-of-type(1){
+  color: #FFD500;
+  font-size: 4rem;
+  @media (max-width:768px) {
+    font-size: 3rem !important;
+ }
+
+}
+
+p:nth-of-type(2){
+  color: #00E5FF !important;
+  font-size: 4rem;
+
+  @media (max-width:768px) {
+     font-size: 3rem !important;
+  }
+}
+}
+
+.Boxtxt1{
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-bottom: 30px;
+  p{
+    font-size: 1.5rem;
+  }
+}
+
+.ContentDoacao{
+  display: flex;
+  max-width: 1000px;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  
+
+  p:nth-of-type(1){
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+  }
+  p:nth-of-type(2){
+    font-size: 1.2rem;
+    font-weight: 200;
+    margin-bottom: 30px;
+    @media (max-width:768px) {
+      text-align: center;
+    }
+  }
+  a{
+    font-size: 1.2rem;
+    color: #ff5af7;
+  }
+  @media (max-width:768px) {
+    flex-direction: column;
+  }
+  
+}
+.BoxMac1{
+  
+  padding: 20px;
+  @media (max-width:786px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+}
+.BoxMac2{
+  max-width: 1000px;
+  margin: 0 auto;
+
+  img{
+    max-width: 100%;
+  }
+}
+
+.BoxLine{
+  max-width: 1000px;
+  margin: 0 auto;
+  height: 1px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: #7a7d7d;
+  @media (max-width:768px) {
+    max-width: 350px;
+  }
+}
+
+// Animação link doação
+
+.LinkAnimado {
+  text-decoration: none; /* Remover sublinhado padrão do link */
+  color: #333; /* Cor padrão do texto do link */
+  position: relative; /* Para posicionamento do link */
+
+  /* Adicionar borda transparente na parte inferior */
+  &:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px; /* Altura da borda */
+    bottom: -2px; /* Posição abaixo do texto */
+    left: 0;
+    background-color: transparent;
+    transition: background-color 0.3s ease; /* Transição da cor */
+  }
+
+  /* Mostrar a borda quando hover */
+  &:hover:before {
+    background-color: #c209f0; /* Cor da borda quando hover */
+  }
+}
+
+// Section Garantia
+.ContainerGarantia{
+  display: flex;
+  max-width: 1000px;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width:768px) {
+    flex-direction: column;
+  }
+}
+.BoxGarantia{
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem 0; /* Adicionar espaço interno para a seção */
+  @media (max-width:768) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  p:nth-of-type(1){
+    font-size: 2.5rem;
+    text-align: center;
+    span{
+      font-size: 3rem;
+      color:var(--cyanX);
+      font-weight: 600;
+    }
+    
+  }
+  p:nth-of-type(2){
+    font-size: 16px;
+    margin-top: 30px;
+    text-align: center;
+  }
+  img{
+    max-width: 100%;
+
+  }
+}
+.BoxWD{
+  @media (max-width:768px) {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+  @media (max-width:468px) {
+    max-width: 250px;
+    margin: 0 auto;
+  }
+}
+.BoxImgGarantia{
+  max-width: 350px;
+  margin: 0 auto;
+  
+  @media (max-width:768px) {
+    max-width: 250px;
+    margin: 0 auto;
+  }
+}
+.BoxGarantiaLine{
+  width: 100%;
+  height: 1px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  background-color: #c3c7c7 !important;
+}

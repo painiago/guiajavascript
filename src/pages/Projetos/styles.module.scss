@@ -1,0 +1,103 @@
+.containerMain{
+  max-width:  720px;
+  margin: 6rem auto 0;
+  display: block;
+  // border: 1px solid white;
+  
+
+  h2{
+    cursor: pointer;
+    text-align: center;
+    font-size: 3rem;
+  }
+  h2:hover {
+    transition: 0.5s;
+    color: var(--yellow-500);
+  }
+}
+
+
+.container{
+  max-width:  720px;
+  margin: 6rem auto 0;
+  display: grid;
+  border: 1px solid var(--gray-800);
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+
+.gridItem {
+  // border: 1px solid var(--gray-800);
+  padding: 1rem;
+
+}
+
+
+.controls {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  max-width: 800px;
+  padding: 0 16px;
+  
+}
+
+.btnNext {
+  content: '';
+  position: absolute;
+  background-color: #e4dede44;
+  border: none;
+  color: #010000;
+  font-size: 14px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  left: 89%;
+
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  &:hover{
+    background-color: #c6c1c1;
+  }
+  
+}
+.btnPrev {
+  content: '';
+  position: relative;
+  background-color: #e4dede44;
+  color: #000000;
+  font-size: 14px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+
+  &:hover{
+    background-color: #e4dede;
+  }
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+.videoX {
+  width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+}
+
+
+// MEDIA 
+@media screen and (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,31 @@
+.footerContainer{
+  padding:0.3rem;
+  background-color: #19041D;
+ 
+
+  p{
+    font-size: 1rem;
+    color: var(--white);
+    text-align: center;
+  }
+}
+.footerContent{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+p{
+  padding: 0rem 5rem;
+  color: rgb(130, 135, 135);
+
+  
+}
+a{
+  color: rgb(130, 135, 135);
+  transition: 0.3s;
+}
+a:hover{
+  color:white;
+}
+}
