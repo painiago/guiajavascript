@@ -9,11 +9,11 @@ import  { Footer } from '@/pages/footer';
 export default function App({ Component, pageProps }: AppProps) {
   return (
     
-    <NextAuthProvider session={pageProps?.session}>
+    <>
     <Header />
     <Component {...pageProps} />
     <Footer />
-    </NextAuthProvider>
+    </>
     
   )
 }
