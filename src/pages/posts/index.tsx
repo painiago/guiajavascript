@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Head from 'next/head';
 import styles from './styles.module.scss';
-import {getPrismicClient} from '../../services/prismic';
+import { getPrismicClient } from '../../services/prismic';
 import { GetStaticProps } from 'next';
 import Link from 'next/link';
 import { RichText } from 'prismic-dom';
@@ -17,75 +17,68 @@ interface Post {
   title: string;
   excerpt: string;
   updatedAt: string;
-  link:string;
+  link: string;
 }
-interface PostsProps{
+interface PostsProps {
   posts: Post[];
 }
 
-
- export default function Posts ({posts}: PostsProps){
+export default function Posts({ posts }: PostsProps) {
   return (
-  <>
-    <Head>
-      <title> Posts | Ignews</title>
+    <>
+      <Head>
+        <title>Posts | Ignews</title>
       </Head>
 
       <main className={styles.container}>
         <div className={styles.posts}>
           {posts.map((post) => (
-            <Link legacyBehavior href={`/posts/${post.slug}`} key={post.slug}>
-            <a>
-             <time>{post.updatedAt}</time>
-             <strong>{post.title}</strong>
-             <p>{post.excerpt}</p>
-             </a>
-            
-           </Link>
-           
-           ))}
-            <Projetos />
-           <div className={styles.payment}>
+            <a href={post.link} key={post.slug}>
+              <time>{post.updatedAt}</time>
+              <strong>{post.title}</strong>
+              <p>{post.excerpt}</p>
+            </a>
+          ))}
+          <Projetos />
+          <div className={styles.payment}>
             <div className={styles.iconPayment}>
               <span>
-              Clique em <strong>Comprar Agora</strong> para garantir o seu acesso imediato ao Guia JavaScript e comece a sua jornada transformadora agora mesmo!
-                 <FontAwesomeIcon icon={faHand} className={styles.icon}/>
-                </span>  
-              </div>
-                <SubscribeButton />
-           </div>
+                Clique em <strong>Comprar Agora</strong> para garantir o seu acesso imediato ao Guia JavaScript e comece a sua jornada transformadora agora mesmo!
+                <FontAwesomeIcon icon={faHand} className={styles.icon} />
+              </span>
+            </div>
+            <SubscribeButton />
+          </div>
         </div>
       </main>
-  </>
+    </>
   );
 }
 
-
 export const getStaticProps: GetStaticProps = async () => {
-  const prismic = getPrismicClient ();
+  const prismic = getPrismicClient();
 
-  const response = await prismic.getAllByType('publication')
- 
+  const response = await prismic.getAllByType('publication');
 
-const posts = response.map(post => {
-  return{
-    slug: post.uid,
-    title: RichText.asText(post.data.title),
-    excerpt: post.data.content.find((content: any) => content.type === 'paragraph')?. text ??'',
-    updatedAt: new Date (post.last_publication_date).toLocaleDateString('pt-BR',{
-      day: '2-digit',
-      month: 'long',
-      year: 'numeric'
-    })    
-  };
-});
+  const posts = response.map((post) => {
+    return {
+      slug: post.uid,
+      title: RichText.asText(post.data.title),
+      excerpt: post.data.content.find((content: any) => content.type === 'paragraph')?.text ?? '',
+      updatedAt: new Date(post.last_publication_date).toLocaleDateString('pt-BR', {
+        day: '2-digit',
+        month: 'long',
+        year: 'numeric',
+      }),
+      link: `/posts/${post.uid}`, // Construindo o link aqui
+    };
+  });
 
-
-console.log(response)
+  console.log(response);
   return {
-    props:{
-      posts
+    props: {
+      posts,
     },
     revalidate: 60 * 60,
-  }
+  };
 }
