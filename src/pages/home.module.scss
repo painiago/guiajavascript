@@ -55,6 +55,9 @@
     font-size: 1.5rem;
     line-height: 2.25rem;
     margin-top: 1.5rem;
+    @media (max-width: 968px) {
+      color: #fff;
+    }
     
     span{
       color: var(--cyan-500);
@@ -193,6 +196,9 @@
       margin-bottom: 20px;
       @media (max-width:768px) {
         font-size: 1.2rem;
+      }
+      @media (max-width: 968px) {
+        color: #fff;
       }
     }
 
