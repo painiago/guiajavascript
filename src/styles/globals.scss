@@ -129,6 +129,31 @@ body {
     (var(--purple-background-start));
  
 }
+/* Quando a largura da tela for menor ou igual a 768 pixels */
+@media screen and (max-width: 768px) {
+  body {
+    background: linear-gradient(
+      to bottom,
+      transparent,
+      var(--roxo-b)
+      ),
+    var(--mobile-purple-background); /* Defina a cor de fundo responsiva para dispositivos móveis */
+  }
+}
+
+/* Quando a largura da tela for menor ou igual a 480 pixels */
+@media screen and (max-width: 480px) {
+  body {
+    background: linear-gradient(
+      to bottom,
+      transparent,
+      var(--roxo-b)
+      ),
+    var(--small-screen-purple-background); /* Defina a cor de fundo responsiva para telas pequenas */
+  }
+}
+
+
 @media (max-width:968px) {
   p{
     color: rgb(246, 245, 245) !important;
@@ -173,3 +198,4 @@ a {
     color-scheme: dark;
   }
 }
+
