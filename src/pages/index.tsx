@@ -30,11 +30,10 @@ export default function Home({product}: HomeProps) {
       <Head>
         <title>Inicio | Guia JS</title>
       </Head>
-
       <main>
         <section className={styles.contentContainer}>
           <section className={styles.hero}>
-            <span>👏 Hey, Welcome</span>
+            <span><p>👏 Hey, Welcome</p></span>
             <h1>Guia <span>JavaScript</span> para iniciantes</h1>
             <p>
               Tenha acesso a toda publicação <br />

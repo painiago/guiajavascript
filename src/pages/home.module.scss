@@ -30,24 +30,31 @@
   display: flex;
   flex-direction: column;
   justify-content: center; /* Centralizar verticalmente o conteúdo */
-  
 
- 
   > span{
-    font-size: 1.5rem;
-    font-weight: bold;
+    p{
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    
   }
   h1{
     font-size: 4.5rem;
     line-height: 4.5rem;
     font-weight: 900;
     margin-top: 2.5rem;
+    @media (min-width: 768px) {
+      font-size: 4.5rem;
+      line-height: 4.5rem;
+    }
     @media (max-width: 768px) {
-      font-size: 3.5rem;
+      font-size: 2.4rem;
+      line-height: 3rem;
     }
 
     span{
       color: var(--cyan-500); 
+      
     }
   }
 
@@ -207,6 +214,12 @@
       margin: 1px 0 0 0;
       font-size: 1.2rem;
       display: flex;
+      @media (max-width:968px) {
+        color: #fff !important;
+      }
+      @media (min-width:968px) {
+        color: #fff !important;
+      }
       
       
       p{
