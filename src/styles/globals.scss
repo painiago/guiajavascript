@@ -130,26 +130,26 @@ body {
  
 }
 /* Quando a largura da tela for menor ou igual a 768 pixels */
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   body {
     background: linear-gradient(
       to bottom,
       transparent,
       var(--roxo-b)
       ),
-    var(--mobile-purple-background); /* Defina a cor de fundo responsiva para dispositivos móveis */
+    var(--mobile-purple-background) !important; /* Defina a cor de fundo responsiva para dispositivos móveis */
   }
 }
 
 /* Quando a largura da tela for menor ou igual a 480 pixels */
-@media screen and (max-width: 480px) {
+@media (max-width: 580px) {
   body {
     background: linear-gradient(
       to bottom,
       transparent,
       var(--roxo-b)
       ),
-    var(--small-screen-purple-background); /* Defina a cor de fundo responsiva para telas pequenas */
+    var(--small-screen-purple-background) !important; /* Defina a cor de fundo responsiva para telas pequenas */
   }
 }
 
