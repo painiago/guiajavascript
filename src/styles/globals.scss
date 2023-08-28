@@ -120,7 +120,7 @@ body {
 }
 html,
 body {
-  color: rgb(var(--foreground-rgb));
+  color: rgb(var(--foreground-rgb))!important;
   background: linear-gradient(
       to bottom,
       transparent,
