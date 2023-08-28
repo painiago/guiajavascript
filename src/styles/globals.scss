@@ -120,7 +120,7 @@ body {
 }
 html,
 body {
-  color: rgb(var(--foreground-rgb))!important;
+  color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
       transparent,
@@ -131,6 +131,7 @@ body {
 }
 /* Quando a largura da tela for menor ou igual a 768 pixels */
 @media (max-width: 768px) {
+  html,
   body {
     color: rgb(var(--foreground-rgb))!important;
     background: linear-gradient(
@@ -144,6 +145,7 @@ body {
 
 /* Quando a largura da tela for menor ou igual a 480 pixels */
 @media (max-width: 580px) {
+  html,
   body {
     color: rgb(var(--foreground-rgb))!important;
     background: linear-gradient(
@@ -162,14 +164,6 @@ body {
   }
   h1{
     color: rgb(246, 245, 245) !important;
-  }
-  html{
-    background: linear-gradient(
-        to bottom,
-        transparent,
-        var(--roxo-b)
-        ),
-      (var(--purple-background-start)) !important;
   }
 }
 @media (min-width:968px) {
@@ -195,12 +189,6 @@ a {
     p{
       color: #fff !important;
     }
-    background: linear-gradient(
-        to bottom,
-        transparent,
-        var(--roxo-b)
-        ),
-      (var(--purple-background-start)) !important;
   }
 }
 @media (min-width: 720px){
@@ -210,7 +198,8 @@ a {
 }
 
 @media (prefers-color-scheme: dark) {
-  html {
+  html,
+  body {
     color-scheme: dark;
   }
 }
