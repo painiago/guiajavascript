@@ -5,27 +5,27 @@
   --gray-300: #a8a8b3;
   --gray-700: #323238;
   --gray-800: #29292e;
-  --gray-850: #21282a !important;
-  --gray-900: #121214 !important;
+  --gray-850: #21282a;
+  --gray-900: #121214;
 
-  --cyan-500: #1dbebe !important;
-  --cyanX: #60d3ca!important;
+  --cyan-500: #1dbebe;
+  --cyanX: #60d3ca;
 
   
-  --yellow-500: #eba417 !important;
-  --yellow-600: #ebd217 !important;
-  --roxo-300: #b84fe8 !important;
-  --roxo-b: #180120 !important;
+  --yellow-500: #eba417;
+  --yellow-600: #ebd217;
+  --roxo-300: #b84fe8;
+  --roxo-b: #180120;
   
   --max-width: 1100px;
   --border-radius: 12px;
   --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
     'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
-    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace !important;
+    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
 
-  --foreground-rgb: 0, 0, 0 !important;
-  --background-start-rgb: 214, 219, 220 !important;
-  --background-end-rgb: 255, 255, 255 !important;
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
 
   --primary-glow: conic-gradient(
     from 180deg at 50% 50%,
@@ -38,7 +38,7 @@
   --secondary-glow: radial-gradient(
     rgba(255, 255, 255, 1),
     rgba(255, 255, 255, 0)
-  )!important;
+  );
 
   --tile-start-rgb: 239, 245, 249;
   --tile-end-rgb: 228, 232, 233;
@@ -50,21 +50,21 @@
     #00000010,
     #00000010,
     #00000080
-  )!important;
+  );
 
-  --callout-rgb: 238, 240, 241 !important;
-  --callout-border-rgb: 172, 175, 176 !important;
-  --card-rgb: 180, 185, 188 !important;
-  --card-border-rgb: 131, 134, 135 !important;
+  --callout-rgb: 238, 240, 241;
+  --callout-border-rgb: 172, 175, 176;
+  --card-rgb: 180, 185, 188;
+  --card-border-rgb: 131, 134, 135;
 
-  --purple-background-start: #1e0227 !important;
+  --purple-background-start: #1e0227;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255 !important;
-    --background-start-rgb:  #2D033B !important;
-    --background-end-rgb: #2D033B !important;
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb:  #2D033B;
+    --background-end-rgb: #2D033B;
 
     --primary-glow: radial-gradient(rgba(1, 65, 255, 0.4), rgba(238, 25, 25, 0));
     --secondary-glow: linear-gradient(
@@ -72,7 +72,7 @@
       rgba(1, 65, 255, 0),
       rgba(1, 65, 255, 0),
       rgba(1, 65, 255, 0.3)
-    ) !important;
+    );
 
     --tile-start-rgb: 2, 13, 46;
     --tile-end-rgb: 2, 5, 19;
@@ -89,7 +89,7 @@
     --callout-rgb: 20, 20, 20;
     --callout-border-rgb: 108, 108, 108;
     --card-rgb: 100, 100, 100;
-    --card-border-rgb: 200, 200, 200 ;
+    --card-border-rgb: 200, 200, 200;
   }
 }
 
@@ -147,7 +147,7 @@ body {
 @media (max-width: 580px) {
   html,
   body {
-    color: rgb(var(--foreground-rgb))!important;
+    color: #fff !important;
     background: linear-gradient(
         to bottom,
         transparent,
