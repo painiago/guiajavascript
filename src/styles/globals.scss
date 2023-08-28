@@ -126,30 +126,32 @@ body {
       transparent,
       var(--roxo-b)
       ),
-    (var(--purple-background-start));
+    (var(--purple-background-start)) !important;
  
 }
 /* Quando a largura da tela for menor ou igual a 768 pixels */
 @media (max-width: 768px) {
   body {
+    color: rgb(var(--foreground-rgb));
     background: linear-gradient(
-      to bottom,
-      transparent,
-      var(--roxo-b)
-      ),
-    var(--mobile-purple-background) !important; /* Defina a cor de fundo responsiva para dispositivos móveis */
+        to bottom,
+        transparent,
+        var(--roxo-b)
+        ),
+      (var(--purple-background-start)) !important;
   }
 }
 
 /* Quando a largura da tela for menor ou igual a 480 pixels */
 @media (max-width: 580px) {
   body {
+    color: rgb(var(--foreground-rgb));
     background: linear-gradient(
-      to bottom,
-      transparent,
-      var(--roxo-b)
-      ),
-    var(--small-screen-purple-background) !important; /* Defina a cor de fundo responsiva para telas pequenas */
+        to bottom,
+        transparent,
+        var(--roxo-b)
+        ),
+      (var(--purple-background-start)) !important;
   }
 }
 
@@ -193,9 +195,9 @@ a {
   }
 }
 
-// @media (prefers-color-scheme: dark) {
-//   html {
-//     color-scheme: dark;
-//   }
-// }
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
 
