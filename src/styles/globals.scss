@@ -144,16 +144,10 @@ body {
 }
 
 /* Quando a largura da tela for menor ou igual a 480 pixels */
-@media (max-width: 580px) {
-  html,
+@media (max-width: 570px) {
   body {
     color: #fff !important;
-    background: linear-gradient(
-        to bottom,
-        transparent,
-        #180120
-        ),
-      #180120 !important;
+    background-color:  #d29be4 !important;
   }
 }
 
@@ -197,10 +191,9 @@ a {
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  html,
+@media (prefers-color-scheme: dark) { 
   body {
-    color-scheme: dark;
+    color-scheme: dark !important;
   }
 }
 
