@@ -133,13 +133,13 @@ body {
 @media (max-width: 768px) {
   html,
   body {
-    color: rgb(var(--foreground-rgb))!important;
+    color: #fff !important;
     background: linear-gradient(
         to bottom,
         transparent,
-        var(--roxo-b)
+        #180120
         ),
-      (var(--purple-background-start)) !important;
+      #180120 !important;
   }
 }
 
@@ -151,9 +151,9 @@ body {
     background: linear-gradient(
         to bottom,
         transparent,
-        var(--roxo-b)
+        #180120
         ),
-      (var(--purple-background-start)) !important;
+      #180120 !important;
   }
 }
 
