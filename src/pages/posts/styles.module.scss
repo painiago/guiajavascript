@@ -57,6 +57,8 @@
   @media (max-width:570px) {
     padding: 0;
     margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
 
   }
   span{
@@ -76,6 +78,7 @@
   top: 12px;
   position: relative;
   animation: shake 4s infinite;
+ 
 }
 
 @keyframes shake {
