@@ -48,17 +48,26 @@
   padding: 2.5rem;
   margin-top: 1rem;
   text-align: center;
-  span{
-    margin-top: 0;
-    font-size: 1.5rem;
-    color: var(--yellow-600);
-    font-weight: 300;
-  }
+
 }
 .iconPayment{
   // border: 1px solid white;
   padding: 1rem;
   margin-bottom: 0.5rem;
+  @media (max-width:570px) {
+    padding: 0;
+    margin-bottom: 1rem;
+
+  }
+  span{
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: var(--yellow-600);
+    font-weight: 300;
+    @media (max-width:570px) {
+      font-size: 1.3rem;
+    }
+  }
 
 }
 

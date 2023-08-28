@@ -14,27 +14,27 @@ export function PoliticaPrivacidade() {
         <div className={styles.gridItem}>
           <p >
             Nesta Política de Privacidade, explicaremos aos visitantes e
-            aos proprietários das imagens contidas neste site como coletamos
-            dados dos visitantes.
+            aos proprietários das imagens contidas neste site.
           </p>
-          <p>Para exercer os seus direitos, basta entrar em contato diretamente
-            com o responsável pela aba de contato.</p>
-          <p>Esclareceremos como é feita a coleta de dados pessoais.</p>
+          <p>Para exercer os seus direitos, basta entrar em contato por e-mail.</p>
+          <br></br>
+          <p>Esclareceremos como o site se comporta ao ser acessado.</p>
         </div>
        
         <div className={styles.gridItem}>
           <h5>
           <FontAwesomeIcon icon={faUserTie} /> Dados de visitantes </h5>
-            <p> &bull; Coletamos dados de contato. Nome, sobrenome,
-            número de telefone, cidade, estado, endereço de e-mail. Para fins de
-            marketing. </p>
+            <p> &bull; Não coletamos nenhum dado pessoal de usuários que acessam
+              o site. Mas não descartamos a possibilidade de que isso aconteça
+              futuramente para fins de marketing. Sempre se mantenha atento a 
+              política de privacidade. </p>
         </div>
        
         <div className={styles.gridItem}>
           <h5><FontAwesomeIcon icon={faCircleInfo} /> Sobre o site</h5>
-          <p>&bull; O site ExeHash pode apresentar, textos, imagens, vídeos,
+          <p>&bull; O site pode apresentar, textos, imagens, vídeos,
             e outras informações, que visa compartilhar um pouco sobre o mundo
-            do javascript.</p>
+            do javascript e da programação.</p>
         </div>
         <div className={styles.gridItem}>
           <h5><FontAwesomeIcon icon={faLink} /> Links externos</h5>

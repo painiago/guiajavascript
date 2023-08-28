@@ -26,20 +26,19 @@
   }
 
   nav {
-    margin-left: 5rem;
+    margin-left: 6rem;
     height: 5rem;
     display: flex;
     align-items: center;
 
     @media (max-width: 768px) {
       position: absolute;
-      top: 5rem;
+      top: 0;
       left: 0;
       width: 100%;
-      background: var(--gray-850);
       z-index: 1;
       display: none;
-      flex-direction: column;
+      flex-direction: row;
       align-items: center;
       &.open {
         display: flex;

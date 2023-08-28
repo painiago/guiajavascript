@@ -141,7 +141,7 @@ export default function Home({product}: HomeProps) {
           <div className={styles.BoxGarantia}>
           <div className={styles.BoxWD}>
             <p>Garantia incontestável de <span> 7 dias</span></p>
-            <p>Milhares de pessoas comuns estão mudando a suas realidades com o poder do digital. Você também pode. Mas caso não goste do que encontrar, devolvo seu dinheiro de volta sem perguntas até 7 dias após a compra.</p>
+            <p>Milhares de pessoas estão mudando a sua realidade com o poder da programação. Você também pode. Mas caso não goste do que encontrar, devolvo seu dinheiro de volta sem perguntas até 7 dias após a compra.</p>
             </div>
           </div>
           <div className={styles.BoxGarantia}>

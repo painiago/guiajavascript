@@ -25,7 +25,9 @@ function Projetos() {
       <h2>Projetos</h2>
       <div className={styles.container}>
         <div className={styles.gridItem}>
+        <div className={styles.videoWrapper}>
           <div dangerouslySetInnerHTML={{ __html: media[activeIndex].src }} />
+        </div>
         </div>
         <div className={styles.controls}>
           <button onClick={handlePrevClick} className={styles.btnPrev}>
