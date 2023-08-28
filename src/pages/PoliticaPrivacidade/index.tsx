@@ -1,7 +1,6 @@
 import styles from './styles.module.scss'
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCircleInfo, faLink, faGlobe, faUserTie } from '@fortawesome/free-solid-svg-icons';
+import { faCircleInfo, faLink, faGlobe, faUserTie, faAddressBook } from '@fortawesome/free-solid-svg-icons';
 import { faAddressCard } from '@fortawesome/free-solid-svg-icons';
 
 
@@ -9,7 +8,6 @@ export function PoliticaPrivacidade() {
   return (
     <div className={styles.privacidadeContainer}>
       <h1>POLÍTICA DE PRIVACIDADE E DE PROTEÇÃO DE DADOS PESSOAIS</h1>
-
       <div className={styles.privacidadePost}>
         <div className={styles.gridItem}>
           <p >
@@ -20,7 +18,6 @@ export function PoliticaPrivacidade() {
           <br></br>
           <p>Esclareceremos como o site se comporta ao ser acessado.</p>
         </div>
-       
         <div className={styles.gridItem}>
           <h5>
           <FontAwesomeIcon icon={faUserTie} /> Dados de visitantes </h5>
@@ -29,7 +26,6 @@ export function PoliticaPrivacidade() {
               futuramente para fins de marketing. Sempre se mantenha atento a 
               política de privacidade. </p>
         </div>
-       
         <div className={styles.gridItem}>
           <h5><FontAwesomeIcon icon={faCircleInfo} /> Sobre o site</h5>
           <p>&bull; O site pode apresentar, textos, imagens, vídeos,
@@ -41,15 +37,12 @@ export function PoliticaPrivacidade() {
           <p>&bull; Para melhorar a experiência e compreensão das informações, você
             encontrara links para outros websites com intuito de complementar
             as informações. </p>
-            
              <h5>
             <FontAwesomeIcon icon={faGlobe} /> Navegação geral no site
              </h5>
             <p>&bull; Coletamos os dados sobre o navegador 
               visando melhorar o desempenho do site.</p>
-       
         </div>
-
         <div className={styles.gridItem}>
           <h5><FontAwesomeIcon icon={faAddressCard} /> Cookies</h5>
           <p>&bull;	O site utiliza cookies para armazenar preferências de navegação.
@@ -62,6 +55,10 @@ export function PoliticaPrivacidade() {
           <p>&bull;	Seus dados não são usados, nem compartilhados com terceiros
             para fins lucrativos.</p>
           <p>&bull; Cookies podem ser desativados pelo usuário </p>
+        </div>
+        <div className={styles.gridItem}>
+          <h5><FontAwesomeIcon icon={faAddressBook} /> Contato</h5>
+          <p>suportwebjs@gmail.com </p>
         </div>
       </div>
     </div>
