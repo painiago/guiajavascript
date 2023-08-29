@@ -44,6 +44,9 @@ interface PostsProps{
            </Link>
            
            ))}
+           <div className={styles.manutencaopost}>
+            <p>Posts em manutenção!</p>
+             </div>
             <Projetos />
            <div className={styles.payment}>
             <div className={styles.iconPayment}>
