@@ -1,9 +1,5 @@
-
 import styles from './styles.module.scss'
-
-
 import { signIn, signOut, useSession } from 'next-auth/react';
-
 import {FiX} from 'react-icons/fi';
 import {FaGoogle} from 'react-icons/fa';
 

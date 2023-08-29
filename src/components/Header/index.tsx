@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import { useState } from 'react'; // Importe o useState
 import { FiMenu } from 'react-icons/fi'; // Importe o ícone de menu
-import { SignInButton } from '../SignInButton';
+// import { SignInButton } from '../SignInButton';
 import styles from './styles.module.scss';
 import { ActiveLink } from '../ActiveLink';
 
