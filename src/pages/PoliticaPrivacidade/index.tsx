@@ -16,7 +16,7 @@ export function PoliticaPrivacidade() {
           </p>
           <p>Para exercer os seus direitos, basta entrar em contato por e-mail.</p>
           <br></br>
-          <p>Esclareceremos como o site se comporta ao ser acessado.</p>
+          <p>Esclareceremos como o site se comporta.</p>
         </div>
         <div className={styles.gridItem}>
           <h5>
