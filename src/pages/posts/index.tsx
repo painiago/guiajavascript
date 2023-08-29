@@ -30,7 +30,6 @@ interface PostsProps{
     <Head>
       <title> Posts | Ignews</title>
       </Head>
-
       <main className={styles.container}>
         <div className={styles.posts}>
           {posts.map((post) => (
@@ -39,14 +38,9 @@ interface PostsProps{
              <time>{post.updatedAt}</time>
              <strong>{post.title}</strong>
              <p>{post.excerpt}</p>
-             </a>
-            
-           </Link>
-           
+             </a>           
+           </Link>          
            ))}
-           <div className={styles.manutencaopost}>
-            <p>Posts em manutenção!</p>
-             </div>
             <Projetos />
            <div className={styles.payment}>
             <div className={styles.iconPayment}>
