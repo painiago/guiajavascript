@@ -8,7 +8,7 @@ export function Footer (){
     <footer className={styles.footerContainer}>
       <ScrollToTopButton />
       <div className={styles.footerContent}>
-        <Link href='/PoliticaPrivacidade'>Política de privacidade </Link>
+        {/* <Link href='/PoliticaPrivacidade'>Política de privacidade </Link> */}
       </div>
     </footer>
     
