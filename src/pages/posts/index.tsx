@@ -28,7 +28,7 @@ interface PostsProps{
   return (
   <>
     <Head>
-      <title> Posts | Ignews</title>
+      <title> Posts | JavaScript</title>
       </Head>
       <main className={styles.container}>
         <div className={styles.posts}>
@@ -41,7 +41,8 @@ interface PostsProps{
              </a>           
            </Link>          
            ))}
-            <Projetos />
+        </div>
+        <Projetos />
            <div className={styles.payment}>
             <div className={styles.iconPayment}>
               <span>
@@ -51,7 +52,6 @@ interface PostsProps{
               </div>
                 <SubscribeButton />
            </div>
-        </div>
       </main>
   </>
   );

@@ -21,8 +21,9 @@ function Projetos() {
   };
 
   return (
-    <main className={styles.containerMain}>
-      <h2>Projetos</h2>
+    <section className={styles.containerMain}>
+        <div className={styles.containerSec}>
+      <h2>Projetos com JavaScript</h2>
       <div className={styles.container}>
         <div className={styles.gridItem}>
         <div className={styles.videoWrapper}>
@@ -38,7 +39,8 @@ function Projetos() {
           </button>
         </div>
       </div>
-    </main>
+      </div>
+    </section>
   );
 }
 

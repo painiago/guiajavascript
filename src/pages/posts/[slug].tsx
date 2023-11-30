@@ -21,7 +21,7 @@ export default function Post ({post}: PostProps) {
    <>
     <Head>
       <title>
-        {post.title} | ig.news
+        {post.title} | JavaScript
       </title>
     </Head>
     <main className={styles.container}>

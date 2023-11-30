@@ -1,12 +1,12 @@
 .container{
-  max-width:  1120px;
+  
   margin: 0 auto;
-  padding: 0 2rem;
   min-height: 100vh;
 }
 
 .posts{
   max-width:  720px;
+  padding: 0 1.2rem;
   margin: 6rem auto 0;
 
   a{
@@ -52,6 +52,7 @@
 }
 .iconPayment{
   // border: 1px solid white;
+  max-width: 720px;
   padding: 1rem;
   margin-bottom: 0.5rem;
   @media (max-width:570px) {
@@ -62,6 +63,7 @@
 
   }
   span{
+    
     margin-top: 0;
     font-size: 1.5rem;
     color: var(--yellow-600);
