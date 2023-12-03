@@ -8,6 +8,7 @@ export function Footer (){
     <footer className={styles.footerContainer}>
       <ScrollToTopButton />
       <div className={styles.footerContent}>
+        <p>Copyright © 2023 Guia JS | Todos os direitos reservados.</p>
         {/* <Link href='/PoliticaPrivacidade'>Política de privacidade </Link> */}
       </div>
     </footer>
