@@ -535,6 +535,9 @@ p:nth-of-type(2){
     h2{
       font-size: 2rem;
       font-weight: bold;
+      @media screen and (max-width: 768px) {
+        font-size: 1.5rem;
+      }
     }
   }
   div:nth-of-type(2){
@@ -548,6 +551,9 @@ p:nth-of-type(2){
     p{
       font-size: 1.2rem;
       color: #ffbd24 !important;
+      @media screen and (max-width: 768px) {
+        font-size: 1rem;
+      }
     }
 }
 
@@ -555,6 +561,9 @@ p:nth-of-type(2){
       font-size: 1.5rem;
       margin-bottom: 20px;
       transition:  color 0.3s ease-in-out;
+      @media screen and (max-width: 768px) {
+        font-size: 1.2rem;
+      }
       &:hover{
         color: rgb(184, 182, 182) ;
         transition:  color 0.3s ease-in-out;
