@@ -2,9 +2,25 @@ import { getPrismicClient } from "@/services/prismic";
 import { GetServerSideProps } from "next";
 import { getSession } from "next-auth/react"
 import Head from "next/head";
-import { RichText } from "prismic-dom";
+import {  RichText } from "prismic-dom";
 import styles from "./post.module.scss";
+import { Breadcrumb } from 'semantic-ui-react'
+import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Link from 'next/link'
+const ChevronRightIcon = () => <FontAwesomeIcon icon={faChevronRight} />;
 
+const BreadcrumbExampleIconDivider = ({ post }: PostProps) => (
+  <Breadcrumb className={styles.containerCrumb}>
+    <Breadcrumb.Section className={styles.crumb} link as={Link} href={'/posts'}>
+      <p>Posts</p>
+    </Breadcrumb.Section>
+    <ChevronRightIcon />
+    <Breadcrumb.Section active className={styles.crumb}>
+      {post.title}
+    </Breadcrumb.Section>
+  </Breadcrumb>
+);
 
 interface PostProps{
   post: {
@@ -17,6 +33,7 @@ interface PostProps{
 }
 
 export default function Post ({post}: PostProps) {
+  
   return(
    <>
     <Head>
@@ -26,6 +43,7 @@ export default function Post ({post}: PostProps) {
     </Head>
     <main className={styles.container}>
       <article className={styles.post}>
+      <BreadcrumbExampleIconDivider post={post}/>
         <h1>{post.title}</h1>
         <time>{post.updatedAt}</time>
         <div
