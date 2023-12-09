@@ -42,7 +42,7 @@ export default function Home({product}: HomeProps) {
             <SubscribeButton />
           </section>
           <div className={styles.hero2}> 
-            <img src="/imagens/capa1.png" alt="avatar" className={styles.imgfluid}/>
+            <img src="/imagens/capa11.png" alt="avatar" className={styles.imgfluid}/>
           </div>
         </section>
         <section className={styles.ContentSobre}>
@@ -80,6 +80,23 @@ export default function Home({product}: HomeProps) {
               <li><FontAwesomeIcon icon={faCircleCheck} /><p>POO</p></li>
             </ul> 
           </div>    
+        </section>
+        <section className={styles.containerBonus}>
+          <div>
+            <h2><strong> 2 BÔNUS</strong> PARA TODOS</h2>
+            <p>QUE ADQUIRIREM O <strong>GUIA JS</strong></p>
+          </div>
+          <div className={styles.contentBonus}>
+            <div>
+              <img src="/imagens/bonus1.png" alt="bônus" />
+            </div>
+            <div>
+              <ul>
+                <li><FontAwesomeIcon icon={faCircleCheck} />E-book Guia HTML</li>
+                <li><FontAwesomeIcon icon={faCircleCheck} />Modelo de Landing Page</li>
+              </ul>
+            </div>
+          </div>
         </section>
         <section className={styles.ContentTrabalho}>  
           <div className={styles.BoxPay}>
