@@ -8,7 +8,8 @@ function Projetos() {
   const media = [
     { type: "video", src: '<iframe src="https://player.vimeo.com/video/857724178" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>', title: "Vídeo do Projeto 1", alt: '1' },
     { type: "video", src: '<iframe src="https://player.vimeo.com/video/857726662" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>', title: "Vídeo do Projeto 2", alt: '2' },
-    { type: "video", src: '<iframe src="https://player.vimeo.com/video/857734646" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>', title: "Vídeo do Projeto 2", alt: '2' }
+    { type: "video", src: '<iframe src="https://player.vimeo.com/video/895274036" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>', title: "Vídeo do Projeto 2", alt: '3' },
+    { type: "video", src: '<iframe src="https://player.vimeo.com/video/895271586" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="GTA6"></iframe>', title: "Vídeo do Projeto 2", alt: '4' }
 
   ];
 

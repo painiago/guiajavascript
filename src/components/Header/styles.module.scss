@@ -10,7 +10,10 @@
   padding: 0 2rem;
   display: flex;
   align-items: center;
-
+  justify-content: space-between;
+  div:nth-of-type(1){
+    display: flex;
+  
   .menuButton {
     display: flex !important; /* Esconde o ícone de menu em telas maiores */
     align-items: center !important;
@@ -97,9 +100,19 @@
           font-weight: bold;
         }
       }
-    
   }
-
+}
+div:nth-of-type(2){
+  svg{
+    font-size: 1.5rem !important;
+    transition: all 0.3s ease-in-out;
+    color: var(--gray-300);
+    &:hover{
+      color: var(--white);
+      cursor: pointer;
+    }
+  }
+}
   button {
     margin-left: auto;
     @media (max-width: 768px) {
@@ -111,4 +124,5 @@
     width: 150px;
     height: auto;
   }
+
 }
