@@ -37,7 +37,7 @@ export default function Home({product}: HomeProps) {
     useEffect(() => {
       // Coloque aqui o código do Google Analytics
       const script = document.createElement('script');
-      script.src = 'https://www.googletagmanager.com/gtag/js?id=G-41CNJEPXPL';
+      script.src = 'https://www.googletagmanager.com/gtag/js?id=G-3SKSGHNDDP';
       script.async = true;
   
       script.onload = () => {
@@ -47,7 +47,7 @@ export default function Home({product}: HomeProps) {
         };
         
         window.gtag('js', new Date());
-        window.gtag('config', 'G-41CNJEPXPL');
+        window.gtag('config', 'G-3SKSGHNDDP');
       };
   
       document.head.appendChild(script);
