@@ -3,13 +3,13 @@ import { getStripeJs } from '@/services/stripe-js';
 import { signIn, useSession } from 'next-auth/react';
 import styles from './styles.module.scss';
 import { useRouter } from 'next/router';
+import { useEffect } from 'react';
 
 interface SubcribeButtonProps{
   priceId: string;
 }
 
-export function SubscribeButton() {
-
+export const SubscribeButton: React.FC<SubcribeButtonProps> = ({ priceId }) => {
 //   const {data: session} = useSession();
 //   const router = useRouter();
     
@@ -37,8 +37,35 @@ export function SubscribeButton() {
   
 //  Sessão de checkout 
 
+const router = useRouter();
+
+  useEffect(() => {
+    const handleButtonClick = () => {
+      // Verificar se gtag está definido antes de chamá-lo
+      if (window.gtag) {
+        window.gtag('event', 'click', {
+          event_category: 'button',
+          event_label: 'subscribe_button',
+        });
+      }
+    };
+
+    // Adicionar um ouvinte de clique ao botão
+    const subscribeButton = document.getElementById('subscribe-button');
+    if (subscribeButton) {
+      subscribeButton.addEventListener('click', handleButtonClick);
+    }
+
+    return () => {
+      // Remover o ouvinte apenas se gtag e subscribeButton estiverem definidos
+      if (window.gtag && subscribeButton) {
+        subscribeButton.removeEventListener('click', handleButtonClick);
+      }
+    };
+  }, []);
+
   return(
-    <button type='button'
+    <button  id="subscribe-button" type='button'
     className={styles.subscribeButton}
     // onClick={handleSubscribe}
     onClick={() => {

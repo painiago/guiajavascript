@@ -24,8 +24,39 @@ interface HomeProps {
 // Client-side
 // Server-side
 // Static Site Generation
-
+declare global {
+  interface Window {
+    // Adicione a declaração para a propriedade gtag
+    gtag?: (command: string, action: string, options: any) => void;
+  }
+}
 export default function Home({product}: HomeProps) {
+
+  useEffect(() => {
+    const handleButtonClick = () => {
+      // Verificar se gtag está definido antes de chamá-lo
+      if (window.gtag) {
+        window.gtag('event', 'click', {
+          event_category: 'button',
+          event_label: 'subscribe_button',
+        });
+      }
+    };
+  
+    // Adicionar um ouvinte de clique ao botão
+    const subscribeButton = document.getElementById('subscribe-button');
+    if (subscribeButton) {
+      subscribeButton.addEventListener('click', handleButtonClick);
+    }
+  
+    return () => {
+      // Remover o ouvinte apenas se gtag e subscribeButton estiverem definidos
+      if (window.gtag && subscribeButton) {
+        subscribeButton.removeEventListener('click', handleButtonClick);
+      }
+    };
+  }, []);
+  
 
   return (
     <>
@@ -57,7 +88,7 @@ export default function Home({product}: HomeProps) {
               Tenha acesso a toda publicação <br />
               <span>por R$14,90</span>
             </p>
-            <SubscribeButton />
+            <SubscribeButton priceId={''} />
           </section>
           <div className={styles.hero2}> 
             <img src="/imagens/capa11.png" alt="avatar" className={styles.imgfluid}/>
@@ -120,7 +151,7 @@ export default function Home({product}: HomeProps) {
           <div className={styles.BoxPay}>
             <p>Adiquira o ebook agora e comece sua jornada na programação web!</p>
             <div className={styles.BoxPay2}>
-              <SubscribeButton/>
+              <SubscribeButton priceId={''}/>
             </div>
           </div>
           <div className={styles.BoxTrabalho}>
