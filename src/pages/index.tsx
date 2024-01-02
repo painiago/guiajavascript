@@ -38,7 +38,7 @@ export default function Home({product}: HomeProps) {
       if (window.gtag) {
         window.gtag('event', 'click', {
           event_category: 'button comprar',
-          event_label: 'subscribe_button',
+          event_label: 'comprar_button',
         });
       }
     };
