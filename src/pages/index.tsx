@@ -10,6 +10,7 @@ import { stripe } from '@/services/stripe'
 import { faCircleCheck } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Newsletter from '@/components/newsletter'
+import { useEffect } from 'react'
 
 interface HomeProps {
   product:{
@@ -23,8 +24,40 @@ interface HomeProps {
 // Client-side
 // Server-side
 // Static Site Generation
-
+declare global {
+  interface Window {
+    // Adicione a declaração para dataLayer aqui
+    dataLayer: any[];
+    gtag?: (...args: any[]) => void;
+  }
+}
 export default function Home({product}: HomeProps) {
+
+
+    useEffect(() => {
+      // Coloque aqui o código do Google Analytics
+      const script = document.createElement('script');
+      script.src = 'https://www.googletagmanager.com/gtag/js?id=G-41CNJEPXPL';
+      script.async = true;
+  
+      script.onload = () => {
+        window.dataLayer = window.dataLayer || [];
+        window.gtag = function (...args: any[]) {
+          window.dataLayer.push(...args);
+        };
+        
+        window.gtag('js', new Date());
+        window.gtag('config', 'G-41CNJEPXPL');
+      };
+  
+      document.head.appendChild(script);
+  
+      return () => {
+        // Limpar o script ao desmontar o componente
+        document.head.removeChild(script);
+      };
+    }, []);
+
   return (
     <>
       <Head>
