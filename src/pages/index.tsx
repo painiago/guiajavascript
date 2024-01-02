@@ -24,44 +24,32 @@ interface HomeProps {
 // Client-side
 // Server-side
 // Static Site Generation
-declare global {
-  interface Window {
-    // Adicione a declaração para dataLayer aqui
-    dataLayer: any[];
-    gtag?: (...args: any[]) => void;
-  }
-}
+
 export default function Home({product}: HomeProps) {
 
 
-    useEffect(() => {
-      // Coloque aqui o código do Google Analytics
-      const script = document.createElement('script');
-      script.src = 'https://www.googletagmanager.com/gtag/js?id=G-3SKSGHNDDP';
-      script.async = true;
-  
-      script.onload = () => {
-        window.dataLayer = window.dataLayer || [];
-        window.gtag = function (...args: any[]) {
-          window.dataLayer.push(...args);
-        };
-        
-        window.gtag('js', new Date());
-        window.gtag('config', 'G-3SKSGHNDDP');
-      };
-  
-      document.head.appendChild(script);
-  
-      return () => {
-        // Limpar o script ao desmontar o componente
-        document.head.removeChild(script);
-      };
-    }, []);
+
 
   return (
     <>
       <Head>
         <title>Inicio | Guia JS</title>
+        <script
+          async
+          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
+              page_path: window.location.pathname,
+            });
+          `,
+          }}
+        />
       </Head>
       <main>
         <section className={styles.contentContainer}>
