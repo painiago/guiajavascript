@@ -105,14 +105,23 @@ a:hover{
     letter-spacing: 0.5px;
     fill: #350C4E;
     color: #350C4E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #FFFFFF;
     border-radius: 4px 4px 4px 4px;
     padding: 7px 20px 7px 20px; 
 
     a{
 
-      span{
-        margin-right: 5px
+      span:nth-of-type(1){
+        margin-right: 5px;
+        
+      }
+    }
+    span:nth-of-type(1){
+      @media screen and (max-width:768px){
+        font-size: 13px;
       }
     }
   }
