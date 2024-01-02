@@ -44,8 +44,8 @@ const router = useRouter();
       // Verificar se gtag está definido antes de chamá-lo
       if (window.gtag) {
         window.gtag('event', 'click', {
-          event_category: 'button',
-          event_label: 'subscribe_button',
+          event_category: 'button_comprar',
+          event_label: 'comprar_button',
         });
       }
     };

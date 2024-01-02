@@ -37,7 +37,7 @@ export default function Home({product}: HomeProps) {
       // Verificar se gtag está definido antes de chamá-lo
       if (window.gtag) {
         window.gtag('event', 'click', {
-          event_category: 'button comprar',
+          event_category: 'button_comprar',
           event_label: 'comprar_button',
         });
       }
