@@ -173,18 +173,18 @@ export default function Home({product}: HomeProps) {
               <h2>Perguntas frequêntes</h2>
             </div>
             <div>
-            <details>
-              <summary>Quais as formas de pagamento?</summary>
-              <p>Pagando com cartão de crédito você recebe acesso imediato. Por PIX, alguns minutos após fazer o pagamento. Boleto pode levar até 72 horas para ser identificado pelo nosso sistema.</p>
-            </details>  
-            <details>
-              <summary>Se eu tiver dúvidas, como eu faço?</summary>
-              <p>Temos um canal de suporte exclusivo para sanar dúvidas, é só enviar um email para suportwebjs@gmail.com</p>
-            </details> 
-            <details>
-              <summary>O que vou achar no e-book?</summary>
-              <p>Principais conceitos, Estrutura de controle, Exemplos Práticos, Dicas e muito mais.</p>
-            </details> 
+              <details>
+                <summary>Quais as formas de pagamento?</summary>
+                <p>Pagando com cartão de crédito você recebe acesso imediato. Por PIX, alguns minutos após fazer o pagamento. Boleto pode levar até 72 horas para ser identificado pelo nosso sistema.</p>
+              </details>  
+              <details>
+                <summary>Se eu tiver dúvidas, como eu faço?</summary>
+                <p>Temos um canal de suporte exclusivo para sanar dúvidas, é só enviar um email para suportwebjs@gmail.com</p>
+              </details> 
+              <details>
+                <summary>O que vou achar no e-book?</summary>
+                <p>Principais conceitos, Estrutura de controle, Exemplos Práticos, Dicas e muito mais.</p>
+              </details> 
             </div>    
             </section>
       </main>

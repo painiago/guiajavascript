@@ -1,7 +1,6 @@
 .footerContainer{
-  padding: 3rem 1rem;
-  background-color: #180120;
- 
+  // background-color: #180120;
+
 
   p{
     font-size: 1rem;
@@ -11,6 +10,22 @@
       font-size: 0.9rem;
     }
   }
+}
+.boxSvg{
+  transform: rotate(180deg);
+  fill: #350C4E;
+  svg{
+    color: #c6c5c6;
+  }
+}
+.footerBackColor{
+  padding: 3rem 1rem;
+  background-color: #350C4E;
+}
+.widthFooter{
+  max-width: 1200px;
+  margin: 0 auto;
+  
 }
 .footerContent{
   display: flex;
@@ -31,4 +46,74 @@ a{
 a:hover{
   color:white;
 }
+}
+.footerPagamento{
+  display: flex;
+  flex-direction: column;
+ 
+}
+.boxPagamento{
+  display: flex;
+  padding: 20px;
+  @media screen and (max-width:768px) {
+    flex-direction: column;
+  }
+ 
+  .boxAntSeguros{
+    padding: 10px;
+    h2{
+      font-size: 1.3rem;
+      font-weight: 600;
+      line-height: 1.5em;
+      letter-spacing: 1px;
+      @media screen and (max-width:768px) {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+.imgPagamento{
+  max-width: 230px;
+
+  img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}
+
+.boxSeguro{
+  padding: 10px;
+  div:nth-of-type(1){
+    margin-bottom: 1.25rem;
+    h2{
+      font-size: 1.3rem;
+      font-weight: 600;
+      line-height: 1.5em;
+      letter-spacing: 1px;
+      @media screen and (max-width:768px) {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .boxSeguro2{
+    max-width: 200px;
+    font-family: "Poppins", Sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    fill: #350C4E;
+    color: #350C4E;
+    background-color: #FFFFFF;
+    border-radius: 4px 4px 4px 4px;
+    padding: 7px 20px 7px 20px; 
+
+    a{
+
+      span{
+        margin-right: 5px
+      }
+    }
+  }
 }
